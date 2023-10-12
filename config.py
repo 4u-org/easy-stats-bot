@@ -10,6 +10,12 @@ SESSION_TIMEOUT = timedelta(seconds=int(getenv("SESSION_TIMEOUT", 60*5)))
 LOCAL = getenv("LOCAL", "True").lower() in ['true', '1']
 TOKEN = getenv("TELEGRAM_TOKEN")
 
+API_HOST = getenv("API_HOST")
+API_TOKEN = getenv("API_TOKEN")
+
+ID_API_HOST = getenv("ID_API_HOST")
+ID_API_TOKEN = getenv("ID_API_TOKEN")
+
 DATABASE_URL = getenv("DATABASE_URL").replace("postgresql://", "postgres://")
 
 if LOCAL:
